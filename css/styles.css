@@ -1,6 +1,7 @@
 /* CUSTOM PROPS */
 :root {
   --primary: #ea625c;
+  --primary-dark: #c9514e;
   --text-color: #333;
 }
 
@@ -70,6 +71,30 @@ img {
 }
 
 
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 12px 38px;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+  transition: background-color .3s ease,
+              opacity .3s ease;
+  text-decoration: none;
+  border: 0;
+}
+
+.button:hover{
+  background-color: var(--primary-dark);
+}
+
+.button:active {
+  opacity: .8;
+}
+
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
@@ -78,8 +103,8 @@ img {
 
 /* SITE-HEADER */
 .site-header {
-  padding-top: 30px;
-  padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .site-header-container.container {
@@ -154,6 +179,55 @@ img {
 }
 
 
+/* HERO */
+.hero {
+  display: flex;
+  padding-top: 140px;
+  padding-bottom: 185px;
+  border-bottom: 2px solid #ddd;
+  background-image: url("../img/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 540px) bottom;
+}
+
+
+/* LEAD-CTA */
+.lead-cta {
+  width: 100%;
+  max-width: 490px ;
+}
+
+.lead-cata-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.lead-cata-text {
+  padding-left: 37px;
+  border-left: 3px solid #888;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -162,5 +236,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
+  .hero {
+    background-image: url("../img/intro-bg@2x.jpg");
+  }
 }
