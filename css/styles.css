@@ -40,6 +40,12 @@ img {
 }
 
 
+/* OUTLINE STYLE */
+*:focus {
+  outline: 2px dashed var(--primary);
+  outline-offset: 2px;
+}
+
 /* VISUALLY-HIDDEN */
 .visually-hidden {
   position: absolute;
